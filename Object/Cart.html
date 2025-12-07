@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+<body>
+    <center>
+    <div class="card" style="width: 18rem;">
+        <button  onclick="getclick()">show details</button>
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title" id="name"> </h5>
+            <p class="card-body" id="des"></p>
+            <h3 id="price"></h3>
+            <a href="#" class="btn btn-primary">Add to Cart</a>
+        </div>
+    </div>
+    </center>
+
+    <script>
+        let mobile={
+            name:"One plus Nord 5",
+            desc:"OnePlus Nord 5 | Snapdragon 8s Gen 3 | Stable 144FPS Gaming | Dual 50MP Flagship Camera |",
+            price:45000,
+            src:"https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSWDuzXX3AO8wDttmpbVO1prvA_vm7XJm4X_JE2WgvJ2jHHJtq3G2DWH5og2MJUSejwXSwbNeTsd7-C0CZWCIvkUl_qBY8S7nQusrCWUHH37yE3FX5KM-U2iy9BSSdhH7-AxZNeqbgeXQ&usqp=CAc "
+        }
+
+        let mobilename=document.getElementById("name");
+        let mobiledesc=document.getElementById("des");
+        let mobileprice=document.getElementById("price");
+        let mobileimg=document.getElementById("img");
+
+        function getclick(){
+            mobilename.innerHTML=mobile.name;
+            mobiledesc.innerHTML=mobile.desc;
+            mobileprice.innerHTML=mobile.price;
+            mobileimg.innerHTML=mobile.src;
+        }
+
+    </script>
+    
+</body>
+</html>
