@@ -33,6 +33,5 @@ async function getUser() {
         console.log("Async Error:", errr);
     }
 }
-
 getUser();
 

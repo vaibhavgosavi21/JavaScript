@@ -2,6 +2,7 @@ function calculate(operation) {
 
     let n1 = parseFloat(document.getElementById("num1").value);
     let n2 = parseFloat(document.getElementById("num2").value);
+
     let result = 0;
 
     if (operation === 'add') {
